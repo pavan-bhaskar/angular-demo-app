@@ -1,0 +1,23 @@
+<div style="position:relative;margin-top: 80px;" >
+    <table>
+        <h6>Contacts List</h6>
+        <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Contact No.</th>
+        <th>User Name</th>
+        <th>Website</th>
+        <th>E-mail</th>
+    </tr>
+    <tr *ngFor= "let user of lstUsers">
+        <td> {{user.id}} </td>
+        <td> {{user.name}}</td>
+        <td>{{ user.phone}}</td>
+        <td> {{user.username}} </td>
+        <td> {{user.website}} </td>
+        <td> {{user.email}} </td>
+    </tr>
+    </table>
+</div>
+
+

@@ -1,0 +1,17 @@
+<div style="position:relative;margin-top: 80px;" >
+    <table> 
+        <h6>Deparments List</h6>
+        <tr>
+        <th>Department ID</th>
+        <th>Department Name</th>
+        <th>Location</th>
+    </tr>
+    <tr *ngFor= "let dept of lstDept">
+        <td> {{dept.deptid}} </td>
+        <td> {{dept.dname}}</td>
+        <td>{{ dept.location}}</td>
+    </tr>
+    </table>
+</div>
+
+
